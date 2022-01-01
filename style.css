@@ -1,0 +1,115 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 20px;
+  padding: 14px 25px 14px 25px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all ease-in-out 0.6s;
+}
+
+.orange-btn {
+  color: var(--orange);
+}
+.orange-btn:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.cyan-btn {
+  color: var(--cyan);
+}
+.cyan-btn:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.dark-cyan-btn {
+  color: var(--dark-cyan);
+}
+.dark-cyan-btn:hover {
+  color: white;
+  background-color: transparent;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  padding-bottom: 25px;
+  line-height: 1.7;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container {
+  padding: 20px;
+  color: white;
+}
+
+.card {
+  padding: 30px;
+}
+
+.orange {
+  background-color: var(--orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.cyan {
+  background-color: var(--cyan);
+}
+
+.dark-cyan {
+  background-color: var(--dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+  .orange {
+    border-radius: 10px 0 0 10px;
+  }
+  .dark-cyan {
+    border-radius: 0 10px 10px 0;
+  }
+  .card {
+    padding: 40px;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+  button {
+    margin-bottom: 20px;
+  }
+  img {
+    margin-top: 10px;
+  }
+}
